@@ -1,0 +1,7 @@
+title: "sotkaretsos"
+description: "Personal site for sotkaretsos — built with Jekyll on GitHub Pages."
+baseurl: ""
+url: "https://sotkaretsos.github.io"
+theme: jekyll-theme-minima
+plugins:
+  - jekyll-feed
