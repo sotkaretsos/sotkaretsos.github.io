@@ -3,5 +3,3 @@ description: "Personal site for sotkaretsos — built with Jekyll on GitHub Page
 baseurl: ""
 url: "https://sotkaretsos.github.io"
 theme: jekyll-theme-minima
-plugins:
-  - jekyll-feed
