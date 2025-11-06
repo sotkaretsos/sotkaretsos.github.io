@@ -1,5 +1,4 @@
 title: "sotkaretsos"
-description: "Personal site for sotkaretsos — built with Jekyll on GitHub Pages."
+description: "Personal site for sotkaretsos — static fallback for GitHub Pages."
 baseurl: ""
 url: "https://sotkaretsos.github.io"
-theme: jekyll-theme-minima
