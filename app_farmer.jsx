@@ -1,5 +1,3 @@
-import React, { useMemo, useState } from "react";
-
 // Μικρά βοηθητικά components
 const NumberInput = ({ value, onChange, min = 0, step = 0.01, placeholder }) => (
   <input
