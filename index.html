@@ -12,6 +12,70 @@
     a { color:#0ea5a4; }
     header h1 { margin:0 0 8px 0; color:#0ea5a4; }
     footer { margin-top:20px; color:#94a3b8; font-size:14px; text-align:center; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        linear-gradient(135deg, rgba(7, 16, 33, 0.85), rgba(7, 16, 33, 0.65)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80") no-repeat center/cover fixed;
+      color: #e6eef6;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(7, 16, 33, 0.7);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 12px 40px rgba(2, 6, 23, 0.7);
+      backdrop-filter: blur(6px);
+    }
+    a { color: #38d6d4; }
+    header h1 { margin: 0 0 8px 0; color: #38d6d4; }
+    footer { margin-top: 20px; color: #b3c0d4; font-size: 14px; text-align: center; }
+    .calculator-card {
+      margin-top: 32px;
+      padding: 24px;
+      border-radius: 12px;
+      background: rgba(9, 20, 43, 0.75);
+      box-shadow: inset 0 0 0 1px rgba(56, 214, 212, 0.2);
+    }
+    .calculator-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .field label {
+      font-weight: 600;
+      color: #9dd1d0;
+    }
+    .field input {
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, 0.08);
+      color: #e6eef6;
+      font-size: 15px;
+    }
+    .result {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #38d6d4;
+    }
+    @media (min-width: 640px) {
+      .calculator-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
   </style>
 </head>
 <body>
@@ -39,7 +103,116 @@
       <p>Find me on GitHub: <a href="https://github.com/sotkaretsos">github.com/sotkaretsos</a></p>
     </section>
 
+    <section aria-labelledby="revenue-calculator-heading" class="calculator-card">
+      <h2 id="revenue-calculator-heading">Farmer Revenue Calculator</h2>
+      <div id="revenue-calculator-root"></div>
+    </section>
+
     <footer>© 2025 Sotirios Karetsos</footer>
   </main>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="env,react">
+    const { useState, useMemo } = React;
+
+    function formatCurrency(value) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "EUR",
+        maximumFractionDigits: 2,
+      }).format(value || 0);
+    }
+
+    function RevenueCalculator() {
+      const [inputs, setInputs] = useState({
+        pricePerUnit: "",
+        yieldPerHectare: "",
+        cultivatedArea: "",
+        subsidies: "",
+      });
+
+      const handleChange = (event) => {
+        const { name, value } = event.target;
+        setInputs((prev) => ({ ...prev, [name]: value }));
+      };
+
+      const revenue = useMemo(() => {
+        const price = parseFloat(inputs.pricePerUnit) || 0;
+        const yieldAmount = parseFloat(inputs.yieldPerHectare) || 0;
+        const area = parseFloat(inputs.cultivatedArea) || 0;
+        const subsidies = parseFloat(inputs.subsidies) || 0;
+
+        return price * yieldAmount * area + subsidies;
+      }, [inputs]);
+
+      return (
+        <div className="calculator-grid" role="form" aria-label="Farmer revenue inputs">
+          <div className="field">
+            <label htmlFor="pricePerUnit">Price per unit (€/ton)</label>
+            <input
+              id="pricePerUnit"
+              name="pricePerUnit"
+              type="number"
+              min="0"
+              step="0.01"
+              inputMode="decimal"
+              placeholder="e.g. 220"
+              value={inputs.pricePerUnit}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="yieldPerHectare">Yield per hectare (tons)</label>
+            <input
+              id="yieldPerHectare"
+              name="yieldPerHectare"
+              type="number"
+              min="0"
+              step="0.01"
+              inputMode="decimal"
+              placeholder="e.g. 4.5"
+              value={inputs.yieldPerHectare}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="cultivatedArea">Cultivated area (hectares)</label>
+            <input
+              id="cultivatedArea"
+              name="cultivatedArea"
+              type="number"
+              min="0"
+              step="0.01"
+              inputMode="decimal"
+              placeholder="e.g. 12"
+              value={inputs.cultivatedArea}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="field" style={{ gridColumn: "1 / -1" }}>
+            <label htmlFor="subsidies">Additional subsidies (€)</label>
+            <input
+              id="subsidies"
+              name="subsidies"
+              type="number"
+              min="0"
+              step="0.01"
+              inputMode="decimal"
+              placeholder="e.g. 1500"
+              value={inputs.subsidies}
+              onChange={handleChange}
+            />
+          </div>
+          <p className="result" style={{ gridColumn: "1 / -1" }}>
+            Estimated revenue: {formatCurrency(revenue)}
+          </p>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("revenue-calculator-root"));
+    root.render(<RevenueCalculator />);
+  </script>
 </body>
 </html>
