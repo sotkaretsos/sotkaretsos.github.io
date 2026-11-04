@@ -1,9 +1,10 @@
 # sotkaretsos.github.io
 
-This repository is a Jekyll-based personal site published with GitHub Pages.
+Personal academic site of Sotirios T. Karetsos, published with GitHub Pages.
 
-To update the site:
-- Edit files in the repository (index.md, _config.yml, assets/).
-- Commit and push to the main branch. GitHub Pages will build the site automatically.
+- `index.html` — home page: profile, research interests, links to Google Scholar and Scopus, research software and live demos.
+- `tools/revenue-calculator.html` — farmer revenue calculator.
+
+Edit the files and push to `main`; GitHub Pages publishes the site automatically.
 
 Site URL: https://sotkaretsos.github.io

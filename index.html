@@ -1,218 +1,217 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sotirios Karetsos — Home</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <meta name="robots" content="noindex" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sotirios Karetsos · Agricultural University of Athens</title>
+  <meta name="description" content="Sotirios T. Karetsos, Assistant Professor at the Informatics Laboratory, Department of Agricultural Economics and Rural Development, Agricultural University of Athens.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://sotkaretsos.github.io/">
+  <meta property="og:title" content="Sotirios Karetsos">
+  <meta property="og:description" content="Assistant Professor, Informatics Laboratory, Agricultural University of Athens.">
+  <meta property="og:url" content="https://sotkaretsos.github.io/">
+  <meta property="og:type" content="profile">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5f5b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23fff'%3ESK%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sotirios T. Karetsos",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Agricultural University of Athens"
+    },
+    "email": "mailto:karetsos@aua.gr",
+    "url": "https://sotkaretsos.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=FmCZkIkAAAAJ",
+      "https://www.scopus.com/authid/detail.uri?authorId=57204351053",
+      "https://github.com/sotkaretsos",
+      "https://w1.aua.gr/aoa/en/faculty/karetsos-sotirios/"
+    ]
+  }
+  </script>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#071021; color:#e6eef6; margin:0; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px; }
-    main { max-width:900px; width:100%; background:rgba(255,255,255,0.02); padding:28px; border-radius:10px; box-shadow:0 6px 30px rgba(2,6,23,0.6); }
-    a { color:#0ea5a4; }
-    header h1 { margin:0 0 8px 0; color:#0ea5a4; }
-    footer { margin-top:20px; color:#94a3b8; font-size:14px; text-align:center; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:
-        linear-gradient(135deg, rgba(7, 16, 33, 0.85), rgba(7, 16, 33, 0.65)),
-        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80") no-repeat center/cover fixed;
-      color: #e6eef6;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 24px;
+    :root {
+      --bg: #f7f7f4;
+      --surface: #ffffff;
+      --ink: #1c2321;
+      --muted: #5b6662;
+      --line: #e3e5df;
+      --accent: #1f5f5b;
+      --accent-strong: #154542;
+      --accent-soft: #e3efed;
+      --radius: 14px;
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
-    main {
-      max-width: 900px;
-      width: 100%;
-      background: rgba(7, 16, 33, 0.7);
-      padding: 28px;
-      border-radius: 14px;
-      box-shadow: 0 12px 40px rgba(2, 6, 23, 0.7);
-      backdrop-filter: blur(6px);
-    }
-    a { color: #38d6d4; }
-    header h1 { margin: 0 0 8px 0; color: #38d6d4; }
-    footer { margin-top: 20px; color: #b3c0d4; font-size: 14px; text-align: center; }
-    .calculator-card {
-      margin-top: 32px;
-      padding: 24px;
-      border-radius: 12px;
-      background: rgba(9, 20, 43, 0.75);
-      box-shadow: inset 0 0 0 1px rgba(56, 214, 212, 0.2);
-    }
-    .calculator-grid {
-      display: grid;
-      gap: 16px;
-    }
-    .field {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .field label {
-      font-weight: 600;
-      color: #9dd1d0;
-    }
-    .field input {
-      padding: 10px 12px;
-      border-radius: 8px;
-      border: none;
-      background: rgba(255, 255, 255, 0.08);
-      color: #e6eef6;
-      font-size: 15px;
-    }
-    .result {
-      margin-top: 12px;
-      font-size: 20px;
-      font-weight: 700;
-      color: #38d6d4;
-    }
-    @media (min-width: 640px) {
-      .calculator-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111615;
+        --surface: #182020;
+        --ink: #e6ecea;
+        --muted: #a1aeaa;
+        --line: #2a3533;
+        --accent: #7cc4bc;
+        --accent-strong: #a5ddd6;
+        --accent-soft: #1f302e;
       }
     }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); }
+    a { color: var(--accent-strong); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+    header.top { border-bottom: 1px solid var(--line); background: linear-gradient(180deg, var(--surface), var(--bg)); padding: 56px 0 36px; }
+    .eyebrow { margin: 0 0 6px; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
+    h1 { font-family: var(--serif); font-size: clamp(2.2rem, 6vw, 3.2rem); line-height: 1.05; margin: 0 0 10px; font-weight: 600; }
+    .role { margin: 0 0 22px; color: var(--muted); max-width: 720px; }
+    .profiles { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .profiles a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); text-decoration: none; color: var(--ink); font-weight: 600; font-size: 0.92rem; }
+    .profiles a:hover { border-color: var(--accent); }
+    .profiles a:focus-visible, .pubs a:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+    .profiles svg { width: 18px; height: 18px; flex: none; }
+    main section { padding: 36px 0 4px; }
+    h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; margin: 0 0 12px; }
+    h3 { font-size: 1.05rem; margin: 0 0 4px; }
+    p { margin: 0 0 12px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .chips li { background: var(--accent-soft); color: var(--accent-strong); border-radius: 999px; padding: 4px 12px; font-size: 0.9rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; display: flex; flex-direction: column; }
+    .card p { color: var(--muted); font-size: 0.95rem; flex: 1; }
+    .card .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.92rem; font-weight: 600; }
+    .card p.meta, .meta { flex: none; font-size: 0.82rem; color: var(--muted); margin: 0 0 8px; }
+    .book { display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+    .cover { position: relative; width: 170px; aspect-ratio: 7 / 10; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 10px 24px rgba(0,0,0,.14); background: linear-gradient(160deg, #2f6b3c, #1d4a5e); color: #fff; }
+    .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .cover .fallback { position: absolute; inset: 0; padding: 16px 14px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--serif); }
+    .cover .fallback b { font-size: 1.02rem; line-height: 1.2; }
+    .cover .fallback small { font-family: var(--sans); font-size: 0.68rem; opacity: .85; line-height: 1.35; }
+    .book h3 { font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; margin: 0 0 6px; }
+    .book p { color: var(--muted); }
+    .book dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 14px; margin: 0 0 14px; font-size: 0.9rem; }
+    .book dt { color: var(--muted); }
+    .book dd { margin: 0; }
+    .book .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-weight: 600; font-size: 0.95rem; }
+    @media (max-width: 560px) { .book { grid-template-columns: 1fr; } .cover { width: 150px; } }
+    .pubs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .pubs a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; text-decoration: none; color: var(--ink); }
+    .pubs a:hover { border-color: var(--accent); }
+    .pubs strong { display: block; font-size: 1.02rem; }
+    .pubs span { color: var(--muted); font-size: 0.9rem; }
+    footer { margin-top: 48px; border-top: 1px solid var(--line); padding: 22px 0 36px; color: var(--muted); font-size: 0.88rem; }
+    @media (max-width: 640px) { .wrap { padding: 0 16px; } header.top { padding: 40px 0 28px; } }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Sotirios Karetsos</h1>
-      <p>Welcome to my homepage.</p>
-    </header>
+  <header class="top">
+    <div class="wrap">
+      <p class="eyebrow">Agricultural University of Athens</p>
+      <h1>Sotirios T. Karetsos</h1>
+      <p class="role">Assistant Professor, Informatics Laboratory, Department of Agricultural Economics and Rural Development</p>
+      <ul class="profiles" aria-label="Profiles">
+        <li><a href="https://scholar.google.com/citations?user=FmCZkIkAAAAJ" rel="me"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1 9.5l4 2.4V17c0 1.7 3.1 4 7 4s7-2.3 7-4v-5.1l2-1.2V16h2V9.5L12 3Zm0 2.3 7.4 4.2L12 13.7 4.6 9.5 12 5.3ZM7 13.1l5 3 5-3V17c0 .5-1.9 2-5 2s-5-1.5-5-2v-3.9Z"/></svg>Google Scholar</a></li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57204351053" rel="me"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15 15 5.5 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Scopus</a></li>
+        <li><a href="https://github.com/sotkaretsos" rel="me"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>GitHub</a></li>
+        <li><a href="https://w1.aua.gr/aoa/en/faculty/karetsos-sotirios/"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 2 8v2h20V8L12 3Zm-7 9v6H3v2h18v-2h-2v-6h-2v6h-3v-6h-4v6H7v-6H5Z"/></svg>University profile</a></li>
+        <li><a href="mailto:karetsos@aua.gr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18v14H3V5Zm2 2v.4l7 4.7 7-4.7V7H5Zm14 2.8-7 4.6-7-4.6V17h14V9.8Z"/></svg>karetsos@aua.gr</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <section>
-      <h2>About</h2>
-      <p>I am an Assistant Professor at the Informatics Laboratory of the Department of Agricultural Economics & Rural Development, Agricultural University of Athens. I hold an MSc (integrated master) and a BSc in Agricultural Biotechnology from the Agricultural University of Athens, an MBA in Economic–Engineering Systems from the joint postgraduate program of the National Technical University of Athens and the University of Piraeus, and a PhD from the Informatics Laboratory of the Agricultural University of Athens. I have worked at the Ministry of Rural Development and Food, served as a Seconded National Expert and external collaborator at the Joint Research Center of the European Commission in Italy, and worked as a Researcher at the Agricultural University of Athens. I have published over 60 papers in scientific journals, edited volumes, and refereed conferences, as well as more than 60 reports for the European Commission. My research interests include the design, development, and implementation of information systems for Internet service provision; the use of Internet technologies for services (e-commerce, e-government, e-learning); social network analysis; mobile app development; business models and innovation services in the digital economy; information systems modeling; and business process analysis. I have also served on working groups for several funded projects in these areas.</p>
+  <main class="wrap">
+    <section aria-labelledby="about">
+      <h2 id="about">About</h2>
+      <p>I am an Assistant Professor at the Informatics Laboratory of the Department of Agricultural Economics and Rural Development, Agricultural University of Athens. I hold a BSc and an integrated MSc in Agricultural Biotechnology from the Agricultural University of Athens, an MBA in Economic–Engineering Systems from the joint postgraduate programme of the National Technical University of Athens and the University of Piraeus, and a PhD from the Informatics Laboratory of the Agricultural University of Athens.</p>
+      <p>I have worked at the Ministry of Rural Development and Food, served as a Seconded National Expert and external collaborator at the Joint Research Centre of the European Commission in Italy, and worked as a Researcher at the Agricultural University of Athens. I have published more than 60 papers in scientific journals, edited volumes and refereed conferences, and more than 60 reports for the European Commission, and I have served on working groups of several funded projects.</p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/sotkaretsos/project-a">Project A</a></li>
-        <li><a href="https://github.com/sotkaretsos/project-b">Project B</a></li>
+    <section aria-labelledby="research">
+      <h2 id="research">Research interests</h2>
+      <ul class="chips">
+        <li>Information systems for Internet services</li>
+        <li>E-commerce, e-government, e-learning</li>
+        <li>Social network analysis</li>
+        <li>Mobile app development</li>
+        <li>Business models and innovation in the digital economy</li>
+        <li>Information systems modelling</li>
+        <li>Business process analysis</li>
+        <li>Blockchain traceability for agri-food</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Find me on GitHub: <a href="https://github.com/sotkaretsos">github.com/sotkaretsos</a></p>
+    <section aria-labelledby="publications">
+      <h2 id="publications">Publications</h2>
+      <p>My complete and current list of publications and citations is kept in these two indexes.</p>
+      <div class="pubs">
+        <a href="https://scholar.google.com/citations?user=FmCZkIkAAAAJ"><strong>Google Scholar</strong><span>Publications, citations and h-index</span></a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57204351053"><strong>Scopus</strong><span>Author ID 57204351053</span></a>
+      </div>
     </section>
 
-    <section aria-labelledby="revenue-calculator-heading" class="calculator-card">
-      <h2 id="revenue-calculator-heading">Farmer Revenue Calculator</h2>
-      <div id="revenue-calculator-root"></div>
-    </section>
-
-    <footer>© 2025 Sotirios Karetsos</footer>
-  </main>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel" data-presets="env,react">
-    const { useState, useMemo } = React;
-
-    function formatCurrency(value) {
-      return new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "EUR",
-        maximumFractionDigits: 2,
-      }).format(value || 0);
-    }
-
-    function RevenueCalculator() {
-      const [inputs, setInputs] = useState({
-        pricePerUnit: "",
-        yieldPerHectare: "",
-        cultivatedArea: "",
-        subsidies: "",
-      });
-
-      const handleChange = (event) => {
-        const { name, value } = event.target;
-        setInputs((prev) => ({ ...prev, [name]: value }));
-      };
-
-      const revenue = useMemo(() => {
-        const price = parseFloat(inputs.pricePerUnit) || 0;
-        const yieldAmount = parseFloat(inputs.yieldPerHectare) || 0;
-        const area = parseFloat(inputs.cultivatedArea) || 0;
-        const subsidies = parseFloat(inputs.subsidies) || 0;
-
-        return price * yieldAmount * area + subsidies;
-      }, [inputs]);
-
-      return (
-        <div className="calculator-grid" role="form" aria-label="Farmer revenue inputs">
-          <div className="field">
-            <label htmlFor="pricePerUnit">Price per unit (€/ton)</label>
-            <input
-              id="pricePerUnit"
-              name="pricePerUnit"
-              type="number"
-              min="0"
-              step="0.01"
-              inputMode="decimal"
-              placeholder="e.g. 220"
-              value={inputs.pricePerUnit}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="field">
-            <label htmlFor="yieldPerHectare">Yield per hectare (tons)</label>
-            <input
-              id="yieldPerHectare"
-              name="yieldPerHectare"
-              type="number"
-              min="0"
-              step="0.01"
-              inputMode="decimal"
-              placeholder="e.g. 4.5"
-              value={inputs.yieldPerHectare}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="field">
-            <label htmlFor="cultivatedArea">Cultivated area (hectares)</label>
-            <input
-              id="cultivatedArea"
-              name="cultivatedArea"
-              type="number"
-              min="0"
-              step="0.01"
-              inputMode="decimal"
-              placeholder="e.g. 12"
-              value={inputs.cultivatedArea}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="field" style={{ gridColumn: "1 / -1" }}>
-            <label htmlFor="subsidies">Additional subsidies (€)</label>
-            <input
-              id="subsidies"
-              name="subsidies"
-              type="number"
-              min="0"
-              step="0.01"
-              inputMode="decimal"
-              placeholder="e.g. 1500"
-              value={inputs.subsidies}
-              onChange={handleChange}
-            />
-          </div>
-          <p className="result" style={{ gridColumn: "1 / -1" }}>
-            Estimated revenue: {formatCurrency(revenue)}
-          </p>
+    <section aria-labelledby="books">
+      <h2 id="books">Books</h2>
+      <article class="book">
+        <a class="cover" href="https://www.igi-global.com/book/modern-technological-improvement-agriculture-agribusiness/349988" aria-label="Book page at IGI Global">
+          <span class="fallback" aria-hidden="true"><b>Modern Technological Improvement in Agriculture and Agribusiness</b><small>Sotirios Karetsos<br>Constantina Costopoulou<br>IGI Global</small></span>
+          <img src="assets/img/modern-technological-improvement-cover.jpg" alt="Cover of Modern Technological Improvement in Agriculture and Agribusiness" width="350" height="500" loading="lazy" onerror="this.remove()">
+        </a>
+        <div>
+          <p class="meta">Edited volume</p>
+          <h3>Modern Technological Improvement in Agriculture and Agribusiness</h3>
+          <p>Theoretical and applied research on the benefits of modern technological advances in agriculture and agribusiness, with particular attention to the role of information and communication technologies in the sector.</p>
+          <dl>
+            <dt>Editors</dt><dd>Sotirios Karetsos, Constantina Costopoulou</dd>
+            <dt>Publisher</dt><dd>IGI Global Scientific Publishing</dd>
+            <dt>ISBN</dt><dd>979-8-3693-8237-0 (hardcover) · 979-8-3693-8239-4 (e-book)</dd>
+          </dl>
+          <div class="links"><a href="https://www.igi-global.com/book/modern-technological-improvement-agriculture-agribusiness/349988">Book page at IGI Global</a></div>
         </div>
-      );
-    }
+      </article>
+    </section>
 
-    const root = ReactDOM.createRoot(document.getElementById("revenue-calculator-root"));
-    root.render(<RevenueCalculator />);
-  </script>
+    <section aria-labelledby="software">
+      <h2 id="software">Research software and live demos</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="meta">Solidity · Hyperledger Besu · IoT</p>
+          <h3>EVOO Carbon Ledger</h3>
+          <p>Blockchain architecture for auditable carbon-footprint traceability in extra virgin olive oil. The live demo replays an olive-oil case study and lets you try to break the auditability rules.</p>
+          <div class="links">
+            <a href="https://sotkaretsos.github.io/evoo-carbon-ledger/">Live demo</a>
+            <a href="https://github.com/sotkaretsos/evoo-carbon-ledger">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="meta">Solidity · Hyperledger Besu · IoT</p>
+          <h3>Pork Traceability</h3>
+          <p>Traceability of pork in food service, from the slaughterhouse to the souvlaki restaurant: verifiable origin, cold-chain checks, and recalls that reach every product made from a batch.</p>
+          <div class="links">
+            <a href="https://sotkaretsos.github.io/pork-traceability/">Live demo</a>
+            <a href="https://sotkaretsos.github.io/pork-traceability/simplified/">Simplified model</a>
+            <a href="https://github.com/sotkaretsos/pork-traceability">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="meta">Web tool</p>
+          <h3>Farmer revenue calculator</h3>
+          <p>Estimates a farm's revenue from price, yield, cultivated area and subsidies.</p>
+          <div class="links">
+            <a href="tools/revenue-calculator.html">Open the calculator</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>Informatics Laboratory, Department of Agricultural Economics and Rural Development, Agricultural University of Athens, Iera Odos 75, 11855 Athens, Greece · <a href="mailto:karetsos@aua.gr">karetsos@aua.gr</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Sotirios T. Karetsos</div>
+  </footer>
 </body>
 </html>
