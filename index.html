@@ -98,6 +98,8 @@
     .poster { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
     .poster a.img { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
     .poster img { display: block; width: 100%; height: auto; }
+    .poster.portrait a.img { background: var(--accent-soft); }
+    .poster.portrait img { width: auto; max-width: 100%; max-height: 460px; margin: 0 auto; }
     .poster figcaption { padding: 14px 4px 2px; }
     .poster h3 { font-family: var(--serif); font-size: 1.1rem; line-height: 1.25; margin: 0 0 2px; }
     .poster .en { color: var(--muted); margin: 0 0 8px; font-style: italic; }
@@ -349,6 +351,21 @@
           <div class="links">
             <a href="assets/img/llm-beekeeping-poster.jpg">Full-size image</a>
             <a href="assets/docs/llm-beekeeping-poster.pdf">PDF</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="poster portrait">
+        <a class="img" href="assets/img/hsce2024-fisheries-blockchain-poster.jpg" aria-label="Open the poster at full size">
+          <img src="assets/img/hsce2024-fisheries-blockchain-poster-800.jpg" srcset="assets/img/hsce2024-fisheries-blockchain-poster-800.jpg 800w, assets/img/hsce2024-fisheries-blockchain-poster.jpg 1600w" sizes="(max-width: 760px) 100vw, 440px" width="1600" height="2262" loading="lazy" alt="Poster: Blockchain-based traceability solutions in fisheries, insights from Greece. Pie and bar charts summarise a survey of 21 Greek fish farmers on their intention to adopt blockchain traceability.">
+        </a>
+        <figcaption>
+          <h3>Blockchain-based Traceability Solutions in Fisheries: Insights from Greece</h3>
+          <p class="en">Hellenic Society for Circular Economy conference · Chania · 12–13 September 2024</p>
+          <p class="authors">S. Karetsos, K. Demestichas, C. Costopoulou, G. Pantelis</p>
+          <p class="note">A survey of 21 Greek fish farmers, based on the Technology Acceptance Model, on their intention to adopt blockchain-based traceability. The farmers are open to it; the main barriers are the complexity of the technology, set-up and maintenance costs, and the lack of information and training from public authorities. Developed in the TRUSTFOOD project, co-funded by the Digital Europe programme (grant agreement No. 101100804).</p>
+          <div class="links">
+            <a href="assets/img/hsce2024-fisheries-blockchain-poster.jpg">Full-size image</a>
+            <a href="assets/docs/hsce2024-fisheries-blockchain-poster.pdf">PDF</a>
           </div>
         </figcaption>
       </figure>
