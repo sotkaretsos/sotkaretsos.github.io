@@ -93,12 +93,13 @@
     .book dt { color: var(--muted); }
     .book dd { margin: 0; }
     .book .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-weight: 600; font-size: 0.95rem; }
-    .poster + .poster { margin-top: 16px; }
+    .poster-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+    @media (max-width: 760px) { .poster-grid { grid-template-columns: 1fr; } }
     .poster { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
     .poster a.img { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
     .poster img { display: block; width: 100%; height: auto; }
     .poster figcaption { padding: 14px 4px 2px; }
-    .poster h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin: 0 0 2px; }
+    .poster h3 { font-family: var(--serif); font-size: 1.1rem; line-height: 1.25; margin: 0 0 2px; }
     .poster .en { color: var(--muted); margin: 0 0 8px; font-style: italic; }
     .poster .authors { margin: 0 0 6px; font-size: 0.95rem; }
     .poster .note { color: var(--muted); font-size: 0.88rem; margin: 0 0 10px; }
@@ -181,9 +182,10 @@
 
     <section aria-labelledby="posters">
       <h2 id="posters">Posters</h2>
+      <div class="poster-grid">
       <figure class="poster">
         <a class="img" href="assets/img/haicta2026-olive-oil-carbon-poster.jpg" aria-label="Open the poster at full size">
-          <img src="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg" srcset="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg 900w, assets/img/haicta2026-olive-oil-carbon-poster.jpg 2000w" sizes="(max-width: 940px) 100vw, 880px" width="2000" height="1125" loading="lazy" alt="Poster: A blockchain-based approach to carbon footprint monitoring in early-stage olive oil production. A three-block architecture covers cultivation, transport and milling; the studied extra virgin olive oil emits 1.993 kg CO2eq per litre, 70.8% of it from fertilisation.">
+          <img src="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg" srcset="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg 900w, assets/img/haicta2026-olive-oil-carbon-poster.jpg 2000w" sizes="(max-width: 760px) 100vw, 440px" width="2000" height="1125" loading="lazy" alt="Poster: A blockchain-based approach to carbon footprint monitoring in early-stage olive oil production. A three-block architecture covers cultivation, transport and milling; the studied extra virgin olive oil emits 1.993 kg CO2eq per litre, 70.8% of it from fertilisation.">
         </a>
         <figcaption>
           <h3>A Blockchain-Based Approach to Carbon Footprint Monitoring in Early-Stage Olive Oil Production</h3>
@@ -197,8 +199,38 @@
         </figcaption>
       </figure>
       <figure class="poster">
+        <a class="img" href="assets/img/strawberry-digital-farming-poster.jpg" aria-label="Open the poster at full size">
+          <img src="assets/img/strawberry-digital-farming-poster-900.jpg" srcset="assets/img/strawberry-digital-farming-poster-900.jpg 900w, assets/img/strawberry-digital-farming-poster.jpg 2000w" sizes="(max-width: 760px) 100vw, 440px" width="2000" height="1125" loading="lazy" alt="Poster: Digital farming tools in strawberry cultivation. A 16-stage strawberry crop cycle across four seasons, the digital tools mapped to each stage, and the StrawBot digital assistant.">
+        </a>
+        <figcaption>
+          <h3 lang="el">Εργαλεία Ψηφιακής Γεωργίας στην Καλλιέργεια Φράουλας</h3>
+          <p class="en">Digital farming tools in strawberry cultivation</p>
+          <p class="authors">Z. Paxinou, C. Costopoulou, S. Karetsos, K. Demestichas</p>
+          <p class="note">Fifty digital farming tools were recorded and evaluated and mapped to a 16-stage strawberry crop cycle over four seasons, from soil analysis to transport. The StrawBot digital assistant guides growers to the right application for each stage. Part of the TALLHEDA project, funded by the EU's Horizon Europe programme (grant agreement No. 101136578).</p>
+          <div class="links">
+            <a href="assets/img/strawberry-digital-farming-poster.jpg">Full-size image</a>
+            <a href="assets/docs/strawberry-digital-farming-poster.pdf">PDF</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="poster">
+        <a class="img" href="assets/img/wheatbot-poster.jpg" aria-label="Open the poster at full size">
+          <img src="assets/img/wheatbot-poster-900.jpg" srcset="assets/img/wheatbot-poster-900.jpg 900w, assets/img/wheatbot-poster.jpg 2000w" sizes="(max-width: 760px) 100vw, 440px" width="2000" height="1125" loading="lazy" alt="Poster: Development and evaluation of a generative AI application supporting decisions by wheat growers in Greece. Screenshots of the WheatBot chatbot and bar charts of the growers' agreement with statements about it.">
+        </a>
+        <figcaption>
+          <h3 lang="el">Ανάπτυξη και Αξιολόγηση Εφαρμογής Παραγωγικής Τεχνητής Νοημοσύνης για Υποστήριξη Λήψης Αποφάσεων από Παραγωγούς Σιταριού στην Ελλάδα</h3>
+          <p class="en">Development and evaluation of a generative AI application supporting decision-making by wheat growers in Greece</p>
+          <p class="authors">M. Mimikou, C. Costopoulou, S. Karetsos, K. Demestichas</p>
+          <p class="note">WheatBot, a chatbot built with Landbot on 60 questions and answers about sowing, irrigation, fertilisation and plant protection, was evaluated by 55 wheat growers with a questionnaire based on the Technology Acceptance Model. Ease of use scored highest (3.93 out of 5), followed by usefulness and intention to keep using it (3.78–3.80). Part of the TALLHEDA project, funded by the EU's Horizon Europe programme (grant agreement No. 101136578).</p>
+          <div class="links">
+            <a href="assets/img/wheatbot-poster.jpg">Full-size image</a>
+            <a href="assets/docs/wheatbot-poster.pdf">PDF</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="poster">
         <a class="img" href="assets/img/llm-beekeeping-poster.jpg" aria-label="Open the poster at full size">
-          <img src="assets/img/llm-beekeeping-poster-900.jpg" srcset="assets/img/llm-beekeeping-poster-900.jpg 900w, assets/img/llm-beekeeping-poster.jpg 2000w" sizes="(max-width: 940px) 100vw, 880px" width="2000" height="1125" loading="lazy" alt="Poster: Comparative evaluation of large language models in beekeeping. Bar charts show the share of correct answers per model; LLaMA 3.2 3B Instruct leads with 85% and MiniOrca is last with 25%.">
+          <img src="assets/img/llm-beekeeping-poster-900.jpg" srcset="assets/img/llm-beekeeping-poster-900.jpg 900w, assets/img/llm-beekeeping-poster.jpg 2000w" sizes="(max-width: 760px) 100vw, 440px" width="2000" height="1125" loading="lazy" alt="Poster: Comparative evaluation of large language models in beekeeping. Bar charts show the share of correct answers per model; LLaMA 3.2 3B Instruct leads with 85% and MiniOrca is last with 25%.">
         </a>
         <figcaption>
           <h3 lang="el">Συγκριτική Αξιολόγηση Απόδοσης Μεγάλων Γλωσσικών Μοντέλων: Η Περίπτωση της Μελισσοκομίας</h3>
@@ -211,6 +243,7 @@
           </div>
         </figcaption>
       </figure>
+      </div>
     </section>
 
     <section aria-labelledby="software">
