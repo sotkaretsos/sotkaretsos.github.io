@@ -2,3 +2,7 @@ title: "Sotirios Karetsos"
 description: "Sotirios T. Karetsos, Assistant Professor, Informatics Laboratory, Agricultural University of Athens"
 baseurl: ""
 url: "https://sotkaretsos.github.io"
+exclude:
+  - scripts
+  - README.md
+  - app_farmer.jsx

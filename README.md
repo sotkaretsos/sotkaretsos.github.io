@@ -1,10 +1,20 @@
 # sotkaretsos.github.io
 
-Personal academic site of Sotirios T. Karetsos, published with GitHub Pages.
+Personal academic site of Sotirios T. Karetsos, in English and Greek, published with GitHub Pages.
 
-- `index.html` — home page: profile, research interests, links to Google Scholar and Scopus, research software and live demos.
-- `tools/revenue-calculator.html` — farmer revenue calculator.
+| Page | English | Greek |
+|---|---|---|
+| Home: news, research themes, publications, projects, teaching, experience, posters | `index.html` | `el/index.html` |
+| All posters with abstracts and PDFs | `posters.html` | `el/posters.html` |
+| Full publication list with filters | `publications.html` | `el/publications.html` |
+| Farmer revenue calculator | `tools/revenue-calculator.html` | — |
 
-Edit the files and push to `main`; GitHub Pages publishes the site automatically.
+## Editing
 
-Site URL: https://sotkaretsos.github.io
+The pages are generated. Edit the texts in `scripts/build.py` (each text has an English and a Greek version) or the publication list in `assets/data/publications.json`, then run:
+
+```bash
+python3 scripts/build.py
+```
+
+and commit the regenerated HTML, `sitemap.xml` and `robots.txt`. Styles are in `assets/css/site.css`; images and poster PDFs in `assets/img/` and `assets/docs/`.
