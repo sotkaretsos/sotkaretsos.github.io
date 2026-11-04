@@ -93,6 +93,7 @@
     .book dt { color: var(--muted); }
     .book dd { margin: 0; }
     .book .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-weight: 600; font-size: 0.95rem; }
+    .poster + .poster { margin-top: 16px; }
     .poster { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
     .poster a.img { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
     .poster img { display: block; width: 100%; height: auto; }
@@ -180,6 +181,21 @@
 
     <section aria-labelledby="posters">
       <h2 id="posters">Posters</h2>
+      <figure class="poster">
+        <a class="img" href="assets/img/haicta2026-olive-oil-carbon-poster.jpg" aria-label="Open the poster at full size">
+          <img src="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg" srcset="assets/img/haicta2026-olive-oil-carbon-poster-900.jpg 900w, assets/img/haicta2026-olive-oil-carbon-poster.jpg 2000w" sizes="(max-width: 940px) 100vw, 880px" width="2000" height="1125" loading="lazy" alt="Poster: A blockchain-based approach to carbon footprint monitoring in early-stage olive oil production. A three-block architecture covers cultivation, transport and milling; the studied extra virgin olive oil emits 1.993 kg CO2eq per litre, 70.8% of it from fertilisation.">
+        </a>
+        <figcaption>
+          <h3>A Blockchain-Based Approach to Carbon Footprint Monitoring in Early-Stage Olive Oil Production</h3>
+          <p class="en">HAICTA 2026 · Kos Island · 30 September – 3 October 2026</p>
+          <p class="authors">M. Stavropoulou, S. Karetsos, C. Costopoulou, K. Demestichas</p>
+          <p class="note">A three-block traceability architecture (cultivation and harvesting, transport to the mill, processing at the mill) with independently countersigned records, applied to a Koroneiki orchard in Western Achaia over the 2022–2024 seasons. The carbon footprint of the studied EVOO is 1.993 kg CO₂eq per litre, 81.5% of it at the orchard. Part of the TALLHEDA project, funded by the EU's Horizon Europe programme (grant agreement No. 101136578).</p>
+          <div class="links">
+            <a href="assets/img/haicta2026-olive-oil-carbon-poster.jpg">Full-size image</a>
+            <a href="assets/docs/haicta2026-olive-oil-carbon-poster.pdf">PDF</a>
+          </div>
+        </figcaption>
+      </figure>
       <figure class="poster">
         <a class="img" href="assets/img/llm-beekeeping-poster.jpg" aria-label="Open the poster at full size">
           <img src="assets/img/llm-beekeeping-poster-900.jpg" srcset="assets/img/llm-beekeeping-poster-900.jpg 900w, assets/img/llm-beekeeping-poster.jpg 2000w" sizes="(max-width: 940px) 100vw, 880px" width="2000" height="1125" loading="lazy" alt="Poster: Comparative evaluation of large language models in beekeeping. Bar charts show the share of correct answers per model; LLaMA 3.2 3B Instruct leads with 85% and MiniOrca is last with 25%.">
