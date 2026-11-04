@@ -93,6 +93,15 @@
     .book dt { color: var(--muted); }
     .book dd { margin: 0; }
     .book .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-weight: 600; font-size: 0.95rem; }
+    .poster { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+    .poster a.img { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+    .poster img { display: block; width: 100%; height: auto; }
+    .poster figcaption { padding: 14px 4px 2px; }
+    .poster h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin: 0 0 2px; }
+    .poster .en { color: var(--muted); margin: 0 0 8px; font-style: italic; }
+    .poster .authors { margin: 0 0 6px; font-size: 0.95rem; }
+    .poster .note { color: var(--muted); font-size: 0.88rem; margin: 0 0 10px; }
+    .poster .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-weight: 600; font-size: 0.95rem; }
     @media (max-width: 560px) { .book { grid-template-columns: 1fr; } .cover { width: 150px; } }
     .pubs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
     .pubs a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; text-decoration: none; color: var(--ink); }
@@ -167,6 +176,25 @@
           <div class="links"><a href="https://www.igi-global.com/book/modern-technological-improvement-agriculture-agribusiness/349988">Book page at IGI Global</a></div>
         </div>
       </article>
+    </section>
+
+    <section aria-labelledby="posters">
+      <h2 id="posters">Posters</h2>
+      <figure class="poster">
+        <a class="img" href="assets/img/llm-beekeeping-poster.jpg" aria-label="Open the poster at full size">
+          <img src="assets/img/llm-beekeeping-poster-900.jpg" srcset="assets/img/llm-beekeeping-poster-900.jpg 900w, assets/img/llm-beekeeping-poster.jpg 2000w" sizes="(max-width: 940px) 100vw, 880px" width="2000" height="1125" loading="lazy" alt="Poster: Comparative evaluation of large language models in beekeeping. Bar charts show the share of correct answers per model; LLaMA 3.2 3B Instruct leads with 85% and MiniOrca is last with 25%.">
+        </a>
+        <figcaption>
+          <h3 lang="el">Συγκριτική Αξιολόγηση Απόδοσης Μεγάλων Γλωσσικών Μοντέλων: Η Περίπτωση της Μελισσοκομίας</h3>
+          <p class="en">Comparative performance evaluation of large language models: the case of beekeeping</p>
+          <p class="authors">E.-N. Karela, S. Karetsos, C. Costopoulou, K. Demestichas</p>
+          <p class="note">Five LLMs (LLaMA 3.2 3B Instruct, Qwen, Phi, DeepSeek, MiniOrca) answered 20 beekeeping questions using a corpus of 13 beekeeping books in GPT4All. LLaMA 3.2 3B Instruct gave 85% correct answers. Part of the TALLHEDA project, funded by the EU's Horizon Europe programme (grant agreement No. 101136578).</p>
+          <div class="links">
+            <a href="assets/img/llm-beekeeping-poster.jpg">Full-size image</a>
+            <a href="assets/docs/llm-beekeeping-poster.pdf">PDF</a>
+          </div>
+        </figcaption>
+      </figure>
     </section>
 
     <section aria-labelledby="software">
