@@ -47,17 +47,22 @@ T = {
         "en": "Assistant Professor, Informatics Laboratory, Department of Agricultural Economics and Rural Development",
         "el": "Επίκουρος Καθηγητής, Εργαστήριο Πληροφορικής, Τμήμα Αγροτικής Οικονομίας και Ανάπτυξης",
     },
-    "pitch": {
-        "en": "I study how digital technologies — blockchain, artificial intelligence and mobile apps — make agri-food supply chains transparent and help farmers make better decisions.",
-        "el": "Μελετώ πώς οι ψηφιακές τεχνολογίες —το blockchain, η τεχνητή νοημοσύνη και οι εφαρμογές για κινητά— κάνουν διαφανείς τις αγροδιατροφικές αλυσίδες και βοηθούν τους παραγωγούς να παίρνουν καλύτερες αποφάσεις.",
+    "bio": {
+        "en": [
+            "I am an Assistant Professor at the Informatics Laboratory of the Department of Agricultural Economics and Rural Development, Agricultural University of Athens. I hold a BSc and an integrated MSc in Agricultural Biotechnology from the Agricultural University of Athens, an MSc in Techno-Economic Systems from the joint postgraduate programme of the National Technical University of Athens, the University of Piraeus and the National and Kapodistrian University of Athens, and a PhD from the Informatics Laboratory of the Agricultural University of Athens.",
+            "I have worked at the Ministry of Rural Development and Food, served as a Seconded National Expert and external collaborator at the Joint Research Centre of the European Commission in Italy, and worked as a Researcher at the Agricultural University of Athens. I have published 84 peer-reviewed papers (25 in journals, 12 in edited volumes and 47 in conference proceedings) and 67 reports for the European Commission's Joint Research Centre, and I have served on working groups of several funded projects.",
+        ],
+        "el": [
+            "Είμαι Επίκουρος Καθηγητής στο Εργαστήριο Πληροφορικής του Τμήματος Αγροτικής Οικονομίας και Ανάπτυξης του Γεωπονικού Πανεπιστημίου Αθηνών. Είμαι απόφοιτος του Γεωπονικού Πανεπιστημίου Αθηνών (πτυχίο και integrated master στη Γεωπονική Βιοτεχνολογία), κάτοχος μεταπτυχιακού τίτλου στα «Τεχνο-οικονομικά Συστήματα» από το διατμηματικό πρόγραμμα του Εθνικού Μετσόβιου Πολυτεχνείου, του Πανεπιστημίου Πειραιά και του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών, και διδάκτωρ του Εργαστηρίου Πληροφορικής του Γεωπονικού Πανεπιστημίου Αθηνών.",
+            "Έχω εργαστεί στο Υπουργείο Αγροτικής Ανάπτυξης και Τροφίμων, ως Αποσπασμένος Εθνικός Εμπειρογνώμονας και εξωτερικός συνεργάτης στο Joint Research Centre της Ευρωπαϊκής Επιτροπής στην Ιταλία, και ως ερευνητής στο Γεωπονικό Πανεπιστήμιο Αθηνών. Έχω δημοσιεύσει 84 εργασίες με κρίση (25 σε περιοδικά, 12 σε συλλογικούς τόμους και 47 σε πρακτικά συνεδρίων) και 67 εκθέσεις για το Joint Research Centre της Ευρωπαϊκής Επιτροπής, και έχω συμμετάσχει σε ομάδες εργασίας πολλών χρηματοδοτούμενων έργων.",
+        ],
     },
     "aua_profile": {"en": "University profile", "el": "Σελίδα στο ΓΠΑ"},
     "photo_alt": {"en": "Portrait of Sotirios Karetsos", "el": "Φωτογραφία του Σωτήριου Καρέτσου"},
     "nav": {
-        "en": [("news", "News"), ("research", "Research"), ("publications", "Publications"), ("projects", "Projects"), ("teaching", "Teaching"), ("experience", "Experience"), ("posters", "Posters"), ("contact", "Contact")],
-        "el": [("news", "Νέα"), ("research", "Έρευνα"), ("publications", "Δημοσιεύσεις"), ("projects", "Έργα"), ("teaching", "Διδασκαλία"), ("experience", "Πορεία"), ("posters", "Αφίσες"), ("contact", "Επικοινωνία")],
+        "en": [("research", "Research"), ("publications", "Publications"), ("projects", "Projects"), ("teaching", "Teaching"), ("experience", "Experience"), ("posters", "Posters"), ("contact", "Contact")],
+        "el": [("research", "Έρευνα"), ("publications", "Δημοσιεύσεις"), ("projects", "Έργα"), ("teaching", "Διδασκαλία"), ("experience", "Πορεία"), ("posters", "Αφίσες"), ("contact", "Επικοινωνία")],
     },
-    "h_news": {"en": "News", "el": "Νέα"},
     "h_research": {"en": "Research themes", "el": "Ερευνητικές θεματικές"},
     "research_lead": {
         "en": "My current work falls into four themes. Each links to the articles, posters and software behind it.",
@@ -129,24 +134,6 @@ T = {
         "el": f'Αναφορές και οι πιο πρόσφατες προσθήκες: <a href="{SCHOLAR}">Google Scholar</a> · <a href="{SCOPUS}">Scopus</a>.',
     },
 }
-
-NEWS = [
-    {"date": {"en": "Nov 2026", "el": "Νοέ 2026"},
-     "en": "The second cycle of the online programme <b>Advanced Digital Skills in Blockchain for Trusted Food Supply Chains</b> starts at the Centre for Training and Lifelong Learning of the Agricultural University of Athens (92.5 hours, 3.7 ECTS). I am its academic coordinator.",
-     "el": "Ξεκινά ο δεύτερος κύκλος του εξ αποστάσεως προγράμματος <b>«Προηγμένες Ψηφιακές Δεξιότητες σε Blockchain για Αξιόπιστες Εφοδιαστικές Αλυσίδες Τροφίμων»</b> του ΚΕΔΙΒΙΜ του Γεωπονικού Πανεπιστημίου Αθηνών (92,5 ώρες, 3,7 ECTS). Είμαι ο ακαδημαϊκός υπεύθυνος."},
-    {"date": {"en": "Oct 2026", "el": "Οκτ 2026"},
-     "en": "Joined the research team of <b>AGRINEXT</b>, a Horizon Europe project coordinated by the Agricultural University of Athens on skills and knowledge ecosystems for competitive and sustainable farming.",
-     "el": "Εντάχθηκα στην ερευνητική ομάδα του <b>AGRINEXT</b>, έργου Horizon Europe με συντονιστή το Γεωπονικό Πανεπιστήμιο Αθηνών, για τα οικοσυστήματα γνώσης και δεξιοτήτων στη βιώσιμη και ανταγωνιστική γεωργία."},
-    {"date": {"en": "Oct 2026", "el": "Οκτ 2026"},
-     "en": 'Poster at <a href="{p}posters.html#haicta2026">HAICTA 2026</a> in Kos on blockchain-based carbon-footprint monitoring in olive oil production.',
-     "el": 'Αφίσα στο <a href="{p}posters.html#haicta2026">HAICTA 2026</a> στην Κω για την παρακολούθηση του αποτυπώματος άνθρακα στην παραγωγή ελαιολάδου με blockchain.'},
-    {"date": {"en": "Jul 2026", "el": "Ιούλ 2026"},
-     "en": f'Two papers at EDULEARN26 in Palma on evaluating <a href="{doi("10.21125/edulearn.2026.2194")}">large language models for beekeeping education</a> and <a href="{doi("10.21125/edulearn.2026.2195")}">AI tools for landscape architecture education</a>.',
-     "el": f'Δύο εργασίες στο EDULEARN26 στην Πάλμα για την αξιολόγηση <a href="{doi("10.21125/edulearn.2026.2194")}">μεγάλων γλωσσικών μοντέλων στη μελισσοκομική εκπαίδευση</a> και <a href="{doi("10.21125/edulearn.2026.2195")}">εργαλείων τεχνητής νοημοσύνης στην εκπαίδευση αρχιτεκτονικής τοπίου</a>.'},
-    {"date": {"en": "2026", "el": "2026"},
-     "en": f'<a href="{doi("10.1109/ACCESS.2026.3721509")}">“Chatbots in Agriculture: A Literature Review”</a> published in <i>IEEE Access</i>.',
-     "el": f'Δημοσιεύτηκε στο <i>IEEE Access</i> η ανασκόπηση <a href="{doi("10.1109/ACCESS.2026.3721509")}">«Chatbots in Agriculture: A Literature Review»</a>.'},
-]
 
 TAGS = {
     "article": {"en": "Article", "el": "Άρθρο"},
@@ -498,7 +485,8 @@ def person_ld():
 def home(lang):
     p = "../" if lang == "el" else ""
     title = "Sotirios Karetsos · Agricultural University of Athens" if lang == "en" else "Σωτήριος Καρέτσος · Γεωπονικό Πανεπιστήμιο Αθηνών"
-    desc = (t("role", lang) + ". " + t("pitch", lang))
+    desc = f"{t('name', lang)}, {t('role', lang)}, {t('eyebrow', lang)}."
+    bio = "\n".join(f'          <p class="bio">{x}</p>' for x in t("bio", lang))
     out = [head(lang, "index.html", title, desc, person_ld())]
     nav = "".join(f'<a href="#{a}">{b}</a>' for a, b in t("nav", lang))
     out.append(f"""  <header class="top">
@@ -510,7 +498,7 @@ def home(lang):
           <p class="eyebrow">{t('eyebrow', lang)}</p>
           <h1>{t('name', lang)}</h1>
           <p class="role">{t('role', lang)}</p>
-          <p class="pitch">{t('pitch', lang)}</p>
+{bio}
 {profiles(lang)}
         </div>
       </div>
@@ -519,15 +507,6 @@ def home(lang):
   </header>
 
   <main class="wrap">
-""")
-    # News
-    items = "\n".join(f'        <li><time>{n["date"][lang]}</time><div>{fmt_p(n[lang], lang)}</div></li>' for n in NEWS)
-    out.append(f"""    <section aria-labelledby="news">
-      <h2 id="news">{t('h_news', lang)}</h2>
-      <ul class="news">
-{items}
-      </ul>
-    </section>
 """)
     # Research themes
     cards = []

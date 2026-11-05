@@ -53,7 +53,8 @@ header.top { border-bottom: 1px solid var(--line); background: linear-gradient(1
 .eyebrow { margin: 0 0 6px; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
 h1 { font-family: var(--serif); font-size: clamp(2.1rem, 5.5vw, 3.1rem); line-height: 1.05; margin: 0 0 8px; font-weight: 600; }
 .role { margin: 0 0 10px; color: var(--muted); }
-.pitch { margin: 0 0 18px; font-size: 1.08rem; max-width: 680px; }
+.bio { margin: 0 0 10px; max-width: 720px; }
+.hero ul.profiles { margin-top: 18px; }
 .profiles { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .profiles a { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); text-decoration: none; color: var(--ink); font-weight: 600; font-size: 0.9rem; }
 .profiles a:hover { border-color: var(--accent); }
@@ -67,12 +68,6 @@ h1 { font-family: var(--serif); font-size: clamp(2.1rem, 5.5vw, 3.1rem); line-he
   .hero { grid-template-columns: 1fr; gap: 16px; }
   .avatar { width: 120px; height: 120px; }
 }
-
-/* ---------------------------------------------------------------- news */
-.news { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.news li { display: grid; grid-template-columns: 116px 1fr; gap: 14px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
-.news time { font-weight: 600; color: var(--accent-strong); font-size: 0.9rem; padding-top: 1px; }
-@media (max-width: 560px) { .news li { grid-template-columns: 1fr; gap: 2px; } }
 
 /* ---------------------------------------------------------------- themes */
 .themes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
