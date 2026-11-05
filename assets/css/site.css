@@ -147,7 +147,7 @@ h1 { font-family: var(--serif); font-size: clamp(2.1rem, 5.5vw, 3.1rem); line-he
 .poster a.img { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
 .poster img { display: block; width: 100%; height: auto; }
 .poster.portrait a.img { background: var(--accent-soft); }
-.poster.portrait img { width: auto; max-width: 100%; max-height: 760px; margin: 0 auto; }
+.poster.portrait img { width: auto; max-width: 100%; height: min(760px, 135vw); object-fit: contain; margin: 0 auto; }
 .poster figcaption { padding: 14px 4px 2px; }
 .poster h2 { font-size: 1.3rem; line-height: 1.25; margin: 0 0 2px; }
 .poster .en { color: var(--muted); margin: 0 0 8px; font-style: italic; }
